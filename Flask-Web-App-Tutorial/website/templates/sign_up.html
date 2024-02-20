@@ -2,60 +2,57 @@
 
 {% block content %}
 
-<!--Email sign in-->
-  <form method="POST">
-    <h3 align-"center">Sign Up</h3>
-    <div class="form-group">
-      <label for="email">Email Address</label>
-      <input
-      type="email"
-      class="from-control"
-      id="email"
-      name="email"
-      placeholder="enter email"
-      />
+<form class="row g-3">
+  <div class="col-12">
+    <label for="inputAddress" class="form-label">First Name</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="First Name">
+  </div>
+  <div class="col-12">
+    <label for="inputAddress2" class="form-label">Last Name</label>
+    <input type="text" class="form-control" id="inputAddress2" placeholder="Last Names">
+  </div>
+  <div class="col-md-6">
+    <label for="inputEmail4" class="form-label">Email</label>
+    <input type="email" class="form-control" id="inputEmail4">
+  </div>
+  <div class="col-md-6">
+    <label for="inputPassword4" class="form-label">Confirm Email</label>
+    <input type="password" class="form-control" id="inputPassword4">
+  </div>
+  <div class="col-md-6">
+    <label for="inputEmail4" class="form-label">Password</label>
+    <input type="email" class="form-control" id="inputEmail4">
+  </div>
+  <div class="col-md-6">
+    <label for="inputPassword4" class="form-label">Confirm Passwrod</label>
+    <input type="password" class="form-control" id="inputPassword4">
+  </div>
+  <div class="col-md-6">
+    <label for="inputCity" class="form-label">University</label>
+    <input type="text" class="form-control" id="inputCity">
+  </div>
+  <div class="col-md-4">
+    <label for="inputState" class="form-label">State</label>
+    <select id="inputState" class="form-select">
+      <option selected>Choose...</option>
+      <option>...</option>
+    </select>
+  </div>
+  <div class="col-md-2">
+    <label for="inputZip" class="form-label">Zip</label>
+    <input type="text" class="form-control" id="inputZip">
+  </div>
+  <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <label class="form-check-label" for="gridCheck">
+        Check me out
+      </label>
     </div>
-<!--First Name sign in-->
-  <form method="POST">
-    <h3 align-"center">Sign Up</h3>
-    <div class="form-group">
-      <label for="firstName">First Name</label>
-      <input
-      type="email"
-      class="from-control"
-      id="firstName"
-      name="firstName"
-      placeholder="First Name"
-      />
-    </div>
-<!--Password 1 signin-->
-  <form method="POST">
-    <h3 align-"center">Sign Up</h3>
-    <div class="form-group">
-      <label for="password1">password</label>
-      <input
-      type="password1"
-      class="from-control"
-      id="password1"
-      name="password1"
-      placeholder="enter password"
-      />
-    </div>
-<!--Password 2 signin-->
-  <form method="POST">
-    <h3 align-"center">password (Confirm)</h3>
-    <div class="form-group">
-      <label for="password2">email address</label>
-      <input
-      type="password2"
-      class="from-control"
-      id="password2"
-      name="password2"
-      placeholder="enter password again"
-      />
-    </div>
-    <br />
-
-    <button type="submit" class="btn btn-primary">Sign Up</button>
+  </div>
+  <div class="col-12">
+    <button type="submit" class="btn btn-primary">Sign in</button>
+  </div>
+</form>
 
 {% endblock %}
