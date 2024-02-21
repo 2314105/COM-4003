@@ -24,6 +24,12 @@ def sign_up():
         if email1 < 4:
             flash("Email is too short", category="error")
             pass
+        elif firstName < 2:
+            flash("First name is too short", category="error")
+            pass
+        elif lastName < 2:
+            flash("Last name is too short", category="error")
+            pass
         elif email1 != email2:
             flash("Emails don't match", category="error")
             pass
